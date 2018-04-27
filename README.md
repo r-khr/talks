@@ -2,6 +2,6 @@
 
 ## Angular 2 Talks
 
----
+### [Angular 2 Style Guide](Angular2/style-guide/angular-2-style-guide.md)
 
-## [Angular 2 Form Architecture Patterns](Anuglar2/forms/angular-2-forms.md)
+### [Angular 2 Form Architecture Patterns](Angular2/forms/angular-2-forms.md)
