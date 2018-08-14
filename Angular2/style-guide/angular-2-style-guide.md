@@ -19,7 +19,7 @@ Angular environment variables are configurations that allow for conditional logi
 
 ### How to setup and use environment variables?
 
-Environment variables require modication to the files within `app/environments` folder. Depending on the file extention you can provide a different combination of conditions.
+Environment variables require modification to the files within `app/environments` folder. Depending on the file extension you can provide a different combination of conditions.
 
 Creating a file `environment.prod.ts` with conditions.
 
@@ -75,7 +75,7 @@ Typescript is great when you are working on a complex application. It also provi
 
 ### Why use interfaces to describe your data shapes?
 
-Writing interfaces makes working on complex application much more confortable.
+Writing interfaces makes working on complex application much more comfortable.
 Make sure you always type all your function parameters and return values. This will provide you awesome intellisense in editors like VSCode.
 
 ```ts
@@ -134,13 +134,16 @@ interface IncomeItem extends FinancialItem {
 
 ### Why/How to use abstract classes?
 
-Abstract classes allow to create reusabled OOP class logic that can be inherited by any class that extends from the abstract class.
+Abstract classes allow to create reusable OOP class logic that can be inherited by any class that extends from the abstract class.
 
 ```ts
 export abstract class TableRowComponent<T extends ITableRowEntry> {
-  @Input() data: T;
-  @Output() saveDataToStore: EventEmitter<T> = new EventEmitter<T>();
-  @Output() saveDataToApi: EventEmitter<T> = new EventEmitter<T>();
+  @Input()
+  data: T;
+  @Output()
+  saveDataToStore: EventEmitter<T> = new EventEmitter<T>();
+  @Output()
+  saveDataToApi: EventEmitter<T> = new EventEmitter<T>();
 
   abstract buildFormGroupSkeleton(): FormGroup;
   abstract updateTableRowFormGroup(data: T): void;
