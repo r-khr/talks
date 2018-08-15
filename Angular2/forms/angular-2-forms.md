@@ -2,15 +2,15 @@
 
 This article will discuss the following topics:
 
-1.  Thinking about `submit` vs. `auto-save` forms
-    1.1 `Submit` forms
-    1.2 `Auto-save` forms
-    1.2.1 Unique considerations to `Auto-save` forms
-    1.3 Difference between `submit` and `auto-save` forms
-2.  Managing form data
-3.  Managing complex form validation
-4.  Managing api requests on form updates
-5.  Working with NGRX-Forms
+- Thinking about `submit` vs. `auto-save` forms
+- `Submit` forms
+- `Auto-save` forms
+- Unique considerations to `Auto-save` forms
+- Difference between `submit` and `auto-save` forms
+- Managing form data
+- Managing complex form validation
+- Managing api requests on form updates
+- Working with NGRX-Forms
 
 ## Thinking about `submit` vs. `auto-save` forms
 
