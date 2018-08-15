@@ -6,4 +6,4 @@
 
 ### [Angular 2 Form Architecture Patterns](Angular2/forms/angular-2-forms.md)
 
-### [Auto-save Exploration](Angular2/forms/auto-save.md)
+### [Auto-save Exploration](Angular2/auto-save/auto-save.md)
