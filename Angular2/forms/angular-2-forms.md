@@ -1,9 +1,9 @@
-# Angular 2 Form Architecture Patterns
+# Form Architecture Patterns
 
 This article will discuss the following topics:
 
-- Thinking about `submit` vs. `auto-save` forms
-- `Submit` forms
+- Thoughts on forms
+- Managing form data and User input
 - `Auto-save` forms
 - Unique considerations to `Auto-save` forms
 - Difference between `submit` and `auto-save` forms
@@ -12,13 +12,19 @@ This article will discuss the following topics:
 - Managing api requests on form updates
 - Working with NGRX-Forms
 
-## Thinking about `submit` vs. `auto-save` forms
+## Thoughts on forms
 
-All forms share the same building blocks (input fields) but can have many different implementation requirements. Business logic continuously changes or becomes more clarified which requires architecture to be flexible enough to pivot to requirements in a timely manner.
+All forms share the same building blocks (input fields) but can have many different implementation requirements. Business logic continuously changes or becomes more clarified which requires architecture to be flexible enough to pivot to new requirements in a timely manner. While flexibility is important over engineering can create equality difficult challenges.
 
-Working on a large financial calculator has made me aware of the challenges relating to managing data. The system was designed in Angular 5 with NG-RX as the Redux implementation.
+There are three important question to consider when building forms:
 
-### `Submit` forms
+- How to manage form data and User input?
+- How to manage form state?
+- How to manage interaction with database?
+
+Working on a financial calculator has made me aware of the challenges relating to managing data. The system I worked with was designed in Angular 5 with NG-RX as the Redux implementation.
+
+### Managing form data and User input
 
 - Examples: registration forms, sign-up forms, questionnaires
 - Submit type forms aggregate input values and attempt to submit on button press or any other type of trigger
