@@ -14,7 +14,7 @@ This article will discuss the following topics:
 
 ## Thoughts on forms
 
-All forms share the same building blocks (input fields) but can have many different implementation requirements. Business logic continuously changes or becomes more clarified which requires architecture to be flexible enough to pivot to new requirements in a timely manner. While flexibility is important over engineering can create equality difficult challenges.
+All forms share the same building blocks (input fields) but can have many different implementation requirements. Business logic continuously changes or becomes more clarified which requires architecture to be flexible enough to pivot to new requirements in a timely manner. It is important not to over engineering from the beginning. It's easier to refactor to increase complexity than it is to reduce it.
 
 There are three important question to consider when building forms:
 
@@ -22,21 +22,23 @@ There are three important question to consider when building forms:
 - How to manage form state?
 - How to manage interaction with database?
 
-Working on a financial calculator has made me aware of the challenges relating to managing data. The system I worked with was designed in Angular 5 with NG-RX as the Redux implementation.
+Working with large forms has made me aware of the challenges relating to managing data. The system I worked with was designed in Angular 5 with NG-RX as the Redux implementation.
 
 ### Managing form data and User input
 
-- Examples: registration forms, sign-up forms, questionnaires
-- Submit type forms aggregate input values and attempt to submit on button press or any other type of trigger
-- Any validations are triggered by incorrect input entry which blocks saving of data
-- Form state doesn't need to be stored after submitting data
-
 ```ts
-interface Form {
+interface UserForm {
   name: string;
   age: number;
   address: string;
   citizenship: string;
+}
+
+interface CashFlowEntry {
+  id: number;
+  type: string;
+  amount: number;
+  date: string;
 }
 ```
 

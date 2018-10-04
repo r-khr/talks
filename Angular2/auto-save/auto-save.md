@@ -8,8 +8,6 @@ Imagine building an application that required auto saving capabilities akin to g
 
 When a user stops typing into an input field for a set duration we send the value to the database.
 
-## Why?
-
 **Explain why?**
 
 ## Requirement
